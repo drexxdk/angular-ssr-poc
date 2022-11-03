@@ -1,0 +1,22 @@
+
+
+button {
+  display: inline-flex;
+  gap: 1rem;
+  &.server {
+    background-color: red;
+
+    &.loading {
+      background-color: pink;
+    }
+  }
+  &:not(.server) {
+    background-color: green;
+    color:white;
+
+    &.loading {
+      background-color: yellow;
+      color:red;
+    }
+  }
+}

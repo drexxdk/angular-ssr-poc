@@ -1,0 +1,7 @@
+<button [class]="{
+  'server': isServer,
+  'loading': loading
+}" (click)="showAlert('this is just a test alert message')">
+  <span *ngIf="loading">Loading...</span>
+  <span>{{product.name}}</span>
+</button>
